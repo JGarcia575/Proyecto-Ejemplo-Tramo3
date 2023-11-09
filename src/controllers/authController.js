@@ -17,7 +17,7 @@ authenticationController.authentication = (req, res) => {
 };
 
 authenticationController.registrar = (req, res) => {
-    res.send('OK');
+    //simular registro
 };
 
 authenticationController.checkToken = (req, res) => {

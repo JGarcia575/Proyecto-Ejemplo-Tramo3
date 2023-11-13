@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../config/mysqlConextion');
+const { sequelize } = require('../config/mysqlConection');
 
 const Usuario = sequelize.define('Usuarios', {
     nombre: {

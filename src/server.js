@@ -6,7 +6,7 @@ const bodyParse = require('body-parser');
 const authRouter = require('./routes/authRoutes');
 const fileUpload = require('express-fileupload');
 const fileRouter = require('./routes/fileUpload');
-const { mysqlConexion } = require('./config/mysqlConextion');
+const { mysqlConexion } = require('./config/mysqlConection');
 
 const port = 3000;
 

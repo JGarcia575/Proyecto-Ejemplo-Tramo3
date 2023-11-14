@@ -9,14 +9,15 @@ const fileRouter = require('./routes/fileUpload');
 const { mysqlConexion } = require('./config/mysqlConection');
 const mongoConexion = require('./config/mongoConection'); 
 
+
 const port = 3000;
 
 //Middlewares
 app.use(bodyParse.json());
-app.use(fileUpload());
 
 //Rutas
 app.use(router);
+
 app.use(authRouter);
 app.use(fileRouter);
 
@@ -24,6 +25,7 @@ app.use(fileRouter);
 //mysqlConexion();
 //Conexión a base de datos mongo
 mongoConexion();
+
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en el puerto ${port}`);
